@@ -8,6 +8,8 @@ Merkle trees are used in blockchains to verify if a transaction is a part of a b
 flowchart LR
     A[Block 1] --> B[Block 2]
     B --> C[Block 3]
+    C --> I[Block 4]
+    J --> K[Block 4]
 
     subgraph B[Block 2]
         direction BT
@@ -20,7 +22,11 @@ flowchart LR
 
 Each block contains merkle root irrespective of transactions. The merkle root is calculated by hashing the hashes of all transactions in the block. This merkle root is then used to verify if a transaction is a part of the block or not.
 
-Ethereum uses Patricia Merkle tree to store the state of the blockchain. It is a modified version of Merkle tree.
+**Use cases**:
+
+- In Git, for example, Merkle trees are used to find a delta between the local and remote repository states to transfer only the difference between them over the network.
+- Ethereum uses Patricia Merkle tree to store the state of the blockchain. It is a modified version of Merkle tree.
+- In Bitcoin, Merkle trees are used to verify that a transaction was included in the block without downloading the whole block contents.
 
 > For any immutable data (i.e. no change required) like txs added in blocks, standard merkle tree is enough. But, for mutable data (i.e. change required) like state of blockchain, Patricia merkle tree is used as it also stores the changelog of the data.
 
