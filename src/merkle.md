@@ -130,3 +130,7 @@ graph TD;
 ### Multiple
 
 Verifying multiple txs in a block. So, the proof size would be lesser in size than that of single tx proof.
+
+## [Code](../../libs/merkle_tree/examples/)
+
+Examples are in the [Main repo](https://github.com/abhi3700/My_Learning_Cryptography).
