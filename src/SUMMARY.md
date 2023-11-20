@@ -10,4 +10,5 @@
   - Elliptic curves -->
 - [Encryption-Decryption](./encryption/encryption.md)
   - [ECC](./encryption/ecc.md)
+- [Merkle](./merkle.md)
 - [ZKP](./zkp/zkp.md)
