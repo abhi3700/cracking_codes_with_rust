@@ -11,4 +11,5 @@
 - [Encryption-Decryption](./encryption/encryption.md)
   - [ECC](./encryption/ecc.md)
 - [Merkle](./merkle.md)
+- [KZG](./kzg.md)
 - [ZKP](./zkp/zkp.md)

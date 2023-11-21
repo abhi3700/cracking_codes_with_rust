@@ -133,4 +133,4 @@ Verifying multiple txs in a block. So, the proof size would be lesser in size th
 
 ## [Code](../../libs/merkle_tree/examples/)
 
-Examples are in the [Main repo](https://github.com/abhi3700/My_Learning_Cryptography).
+[Examples](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/merkle_tree/examples) are in the [Main repo](https://github.com/abhi3700/My_Learning_Cryptography).
