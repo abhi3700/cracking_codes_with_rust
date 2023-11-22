@@ -6,6 +6,14 @@
 | `+ - *`               | Ring  |
 | `+ - * /`             | Field |
 
+🔝 This also means that:
+
+- every **field** is a **ring**
+- every **ring** is a abelian group
+- every abelian group is a **group**.
+
+Now, let's summarize the difference between Linear & Abstract Algebra:
+
 | Linear Algebra | Abstract Algebra        |
 | -------------- | ----------------------- |
 | Addition       | Addition                |
@@ -24,7 +32,9 @@
 ## Field
 
 <details>
-<summary>Details:</summary>
+<summary><b>Details:</b></summary>
+
+Here w.r.t. Cryptography, we will be dealing with _Finite Fields_.
 
 In Finite Field (also a part of Abstract Algebra), arithmetic operations are done with a modulus i.e. `mod p` where `p` is a large prime number in a finite field.
 
@@ -34,6 +44,14 @@ In Finite Field (also a part of Abstract Algebra), arithmetic operations are don
 > - Multiplicative inverse of `1/5` ≡ `5`. Think of it as `1/5 * 5 = 1`, following `(a * b) = 1`. Consider `1` as the multiplicative identity (like a mirror 🪞 in real world). Visually, `1/5 |1| 5` where 1 is the axis in between 1/5 and 5.
 
 > For simplicity, we will use `mod 7` as the modulus for all the examples below.
+
+**Q**. Why Finite Field?
+
+**A**. Watch this [video](https://www.youtube.com/watch?v=ColSUxhpn6A).
+
+**Q**. Why p should be a prime number in a finite field?
+
+**A**. Because we won't have an integer ℤ determined during multiplicative inverses. For instance, there is no multiplicative inverse of 5 i.e. (`1/5`) with modulus like `100` (which is a non-prime no). Hence, we need to have a prime number as the modulus.
 
 ### Addition
 
@@ -99,3 +117,4 @@ The modulus is kept on adding to the negative number (however big it is), until 
 ## References
 
 - [Field Definition (expanded) - Abstract Algebra](https://www.youtube.com/watch?v=KCSZ4QhOw0I)
+- [Finite Fields in Cryptography: Why and How](https://www.youtube.com/watch?v=ColSUxhpn6A&t=495s)
