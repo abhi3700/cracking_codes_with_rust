@@ -1,7 +1,7 @@
 # Summary
 
-- [Maths](./maths/maths.md)
-  - [Basics](./basics.md)
+- [Maths](./maths.md)
+  <!-- - [Basics](./maths/basics.md) -->
   <!-- - Polynomials
   - Modular arithmetic
   - Finite fields
