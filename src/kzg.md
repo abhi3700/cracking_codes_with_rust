@@ -58,7 +58,45 @@ Here, the `kzg` is called for the rust-kzg-blst package and `kzg_traits` is call
 
 Some [examples](https://github.com/sifraitech/rust-kzg/libs/kzg_cookbook/examples/) based on polynomials.
 
-The examples are based on KZG polynomials i.e. polynomials defined over a finite field.
+The examples are based on KZG polynomials i.e. polynomials defined over a finite field (for computers 256-bit selected).
+
+**Quick heads up before coding**:
+
+- Each `limb_t` element is represented as `[u64; 4]` array because of BLST crate.
+  > Reason: Technically it's possible to represent as `U256` instead of `[u64; 4]`, but the
+  > computers (32/64 bit) are good in 64-bit arithmetic by default. So, it
+  > would be easy to do the arithmetic operations if considered as
+  > `[u64; 4]` instead of `U256` type altogether.
+  > Moreover, `rust-kzg` crate would be difficult to interface with BLST lib (interface with blst curve).
+- The array is wrapped within `blst_fr` struct like this:
+  ```rust
+  struct blst_fr {
+      l: [limb_t; 4usize],
+  }
+  ```
+  > Reason: BLST crate uses this struct to represent a field element.
+- The `blst_fr` struct is wrapped within `FsFr` struct like this:
+  ```rust
+  struct FsFr(blst_fr);
+  ```
+  > Reason: To make it easy to use the `FsFr` struct in the code.
+- The polynomial is represented as a vector of `FsFr` struct
+  ```rust
+  pub struct FsPoly {
+      pub coeffs: Vec<FsFr>,
+  }
+  ```
+- Each polynomial is represented as vector of coefficients with order 0 to n (where n is the degree of the polynomial). The order of the coefficients is important.
+  ```rust
+  // f(x) = 3x^2 + 2x + 1
+  let f = FsPoly {
+      coeffs: vec![
+          FsFr::from(1u64),
+          FsFr::from(2u64),
+          FsFr::from(3u64),
+      ],
+  };
+  ```
 
 ### Create a polynomial (from given len, zero coefficients)
 
@@ -68,15 +106,15 @@ All coefficients are set to zero by default.
 
 ### Create a polynomial (from given coefficients)
 
-[Code](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/kzg_cookbook/examples/create_poly_coeff.rs)
+[Code](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/kzg_cookbook/examples/create_poly_scoeff.rs)
 
 ### Create a polynomial (from random coefficients)
 
-[Code](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/kzg_cookbook/examples/create_poly_rand.rs)
+[Code](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/kzg_cookbook/examples/create_poly_rcoeff.rs)
 
-<!-- TODO: ## Evaluate a polynomial at a point -->
+### Add 2 polynomials
 
-<!-- TODO: ### Add 2 polynomials -->
+[Code](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/kzg_cookbook/examples/add_poly.rs)
 
 ## Resources
 

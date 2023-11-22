@@ -23,6 +23,9 @@
 
 ## Field
 
+<details>
+<summary>Details:</summary>
+
 In Finite Field (also a part of Abstract Algebra), arithmetic operations are done with a modulus i.e. `mod p` where `p` is a large prime number in a finite field.
 
 > Whenever, finite field is mentioned, it is assumed that the modulus is a prime number i.e. with modulus is 1. like:
@@ -58,7 +61,7 @@ In Finite Field (also a part of Abstract Algebra), arithmetic operations are don
 
 The inverse taken here is called _additive inverse_. Like `-2 + 7 = 5`.
 
-The modulus is kept on adding to the negative number (however big it is), until it becomes positive. Once it is positive and if by chance doesn't fall into the range of the modulus `{0,...,p-1}`, it is then remaindered with the modulus like `52 % 7 = 3`.
+The modulus is kept on adding to the negative number (however big it is), until it becomes positive. Once it is positive and if by chance doesn't fall into the range of the modulus `{1,...,m-1}`, it is then remaindered with the modulus like `52 % 7 = 3`.
 
 > By the way, there are many kinds of inverses in a field.
 
@@ -90,3 +93,9 @@ The modulus is kept on adding to the negative number (however big it is), until 
 > 1. _multiplicative inverse_
 > 2. _multiplication_
 > 3. _remainder_
+
+</details>
+
+## References
+
+- [Field Definition (expanded) - Abstract Algebra](https://www.youtube.com/watch?v=KCSZ4QhOw0I)
