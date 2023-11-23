@@ -118,3 +118,7 @@ The modulus is kept on adding to the negative number (however big it is), until 
 
 - [Field Definition (expanded) - Abstract Algebra](https://www.youtube.com/watch?v=KCSZ4QhOw0I)
 - [Finite Fields in Cryptography: Why and How](https://www.youtube.com/watch?v=ColSUxhpn6A&t=495s)
+
+## Resources
+
+- [Algebra maths for ZKP by @Pratyush](https://github.com/Pratyush/algebra-intro)

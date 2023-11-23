@@ -13,3 +13,4 @@
 - [Merkle](./merkle.md)
 - [KZG](./kzg.md)
 - [ZKP](./zkp/zkp.md)
+  - [zkSNARK](./zkp/zk_snark/zksnark.md)
