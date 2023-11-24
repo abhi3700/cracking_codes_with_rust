@@ -122,3 +122,5 @@ The modulus is kept on adding to the negative number (however big it is), until 
 ## Resources
 
 - [Algebra maths for ZKP by @Pratyush](https://github.com/Pratyush/algebra-intro)
+- [Rust lib for Galois Field arithmetic with GF(2^256) i.e. 256-bit prime no.](https://github.com/geky/gf256) [RECOMMENDED]
+- [Rust lib for GF(2^8) i.e. 8-bit prime no.](https://github.com/rustyhorde/sss)
