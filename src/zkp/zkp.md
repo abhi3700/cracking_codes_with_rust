@@ -24,6 +24,29 @@ There are 3 properties of a ZKP system/protocol [1]:
 - **Soundness**: If the proof is invalid, it must be rejected by the verifier (ie. the probability that a verifier accepts an incorrect solution is negligible).
 - **Zero-Knowledge**: The verifier does not learn any information about the information that the prover claims to know other than the assertion that she knows it.
 
+## Types
+
+There are mainly 2 types of ZKP protocols:
+
+- **zkSNARKs** (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)
+- **zkSTARKs** (Zero-Knowledge Scalable Transparent Argument of Knowledge)
+
+Difference under the hood looks like this:
+
+![](../img/zksnark_vs_zkstark.png)
+
+Here, you can notice that zkSNARKs need the elliptic curve. Examples of KZG commitment scheme over BLS12-381 curve, groth16 over BN256 curve etc. In short, there are many schemes like Groth16, Plonk, KZG, etc. that are fit as zkSNARKs (as they fulfill the properties like succinct proof, non-interactive, trusted setup required) with a specific elliptic curve.
+
+---
+
+Other types include:
+
+1. **Mixers**
+   1. Centralized imagine Alice, Bob, Charlie want to send to some other addresses. And here the mixer is the trusted party that might take away the money and not send it to the destination address. So, we need to trust the mixer.
+   2. Decentralized as smart contract using ZKP circuits, like tornado.cash. Here, the mixer is the smart contract. Here, the funds go through the mixer that is effectively a verifier contract that allows the receiver to withdraw the funds if they provide some kind of proof that they are the owner of the funds.
+2. **Commit-Reveal** aka Commitments
+   Here, imagine 3 players are playing a game Rock-Paper-Scissors (RPS) and each one has to _commit_ (via hashing, polynomial), and then during declaring result, everyone has to _reveal_, otherwise considered as cheater.
+
 ## Applications
 
 ### Blockchain
@@ -100,6 +123,7 @@ Please refer to the corresponding section here[1].
 - <u>Prover</u>: You
 - <u>Verifier</u>: Smart contract
 
-## References
+## Resources
 
 1. [What the heck is a Zero-Knowledge Proof, anyway?](https://www.zkcamp.xyz/blog/what-is-a-zkp-anyway)
+2. [DeFi MOOC Lecture 10: Privacy on the Blockchain YT playlist](https://www.youtube.com/playlist?list=PLS01nW3RtgorEzMOg2dpg7KwB5nhQHhSw) 🧑🏻‍💻

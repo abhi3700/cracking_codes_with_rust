@@ -41,11 +41,21 @@ Analogy:
 
 ---
 
+**Q**. Does KZG have constant size proof?
+
+**A**. Yes. KZG proofs maintain a constant size regardless of the polynomial's degree or the size of the data structure they're proving. Specifically, for certain elliptic curves like BLS12_381, the proof size is consistently 48 bytes. For other curves, need to verify via code.
+
+---
+
 ## Maths
 
 <!-- TODO: -->
 
 ## Code
+
+> `rust-kzg` is the main repo being used in production code. Other KZG libs are mostly experimental. Need to be audited.
+>
+> There are other libs like [`ralexstokes-kzg`](https://github.com/ralexstokes/kzg) which shows a small example of KZG commitments implementation like zkSNARKs. But, it is not being used in production code. [This](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/libs/kzg_playground/examples) contain all possible examples of KZG commitments, polynomial arithmetic, etc.
 
 There is a repo: [rust-kzg](https://github.com/sifraitech/rust-kzg) with 2 packages:
 
@@ -121,3 +131,8 @@ All coefficients are set to zero by default.
 ### Videos
 
 - [KZG POLYNOMIAL COMMITMENTS by OpenSense Research](https://www.youtube.com/watch?v=h7yKGYt391M&list=RDCMUC_iWxlRBCbg0my5J9MZPVYA&start_radio=1) 🧑🏻‍💻
+- [Polynomial Commitment KZG with Examples ( part 1 )](https://www.youtube.com/watch?v=n4eiiCDhTes)
+- [Polynomial Commitment KZG with Examples ( part 2 )](https://www.youtube.com/watch?v=NVvNHe_RGZ8)
+- [ZK Study Club: Part1 Polynomial Commitments with Justin Drake](https://www.youtube.com/watch?v=bz16BURH_u8)
+- [ZK StudyClub: Part 2 Polynomial Commitments with Justin Drake](https://www.youtube.com/watch?v=BfV7HBHXfC0)
+- [ZK StudyClub: Part 3 Polynomial Commitments with Justin Drake](https://www.youtube.com/watch?v=TbNauD5wgXM)

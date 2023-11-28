@@ -36,6 +36,8 @@ It allows to define these:
 
 ## Code
 
+- [Seed recovery using ssss crate](https://github.com/abhi3700/subspace-auto/blob/main/sdk/examples/recover_seed_ph_ssss.rs)
+
 ## Resources
 
 - [How to keep an open secret with mathematics using Shamir-Secret Sharing](https://www.youtube.com/watch?v=K54ildEW9-Q)
