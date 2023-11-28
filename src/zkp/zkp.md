@@ -28,8 +28,8 @@ There are 3 properties of a ZKP system/protocol [1]:
 
 There are mainly 2 types of ZKP protocols:
 
-- **zkSNARKs** (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)
-- **zkSTARKs** (Zero-Knowledge Scalable Transparent Argument of Knowledge)
+- **zkSNARK** (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)
+- **zkSTARK** (Zero-Knowledge Scalable Transparent Argument of Knowledge)
 
 Difference under the hood looks like this:
 
