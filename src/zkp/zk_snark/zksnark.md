@@ -57,6 +57,10 @@ If you are aiming to be a circuit developer, then you need to know the maths beh
 
 ## Getting started
 
-I have although tried [writing the circuits program in Noir](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/noir) so far. But I guess, it would be nice to [first write some circuits using Rust with `arkworks-rs`](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/arkworks/README.md) (groth16 scheme) & then switch to the other circuit langs as it doesn't make sense in the beginning to learn a new language just for writing circuits (unless you are a circuit developer).
+From _coding_ standpoint, I have although tried [writing the circuits program in Noir](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/noir) so far. But I guess, it would be nice to [first write some circuits using Rust with `arkworks-rs`](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/arkworks/README.md) (groth16 scheme) & then switch to the other circuit langs as it doesn't make sense in the beginning to learn a new language just for writing circuits (unless you are a circuit developer).
 
 ## Conclusion
+
+## Resources
+
+- [Lecture 10.3: What is a zk-SNARK?](https://www.youtube.com/watch?v=gcKCW7CNu_M)
