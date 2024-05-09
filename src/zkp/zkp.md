@@ -103,7 +103,7 @@ Here, the proof is zero-knowledge because the verifier can't learn anything abou
 
 Mathematically, we can represent the probability like this:
 
-```
+```math
 p^n = 2^(-128)
 
 where,
@@ -115,6 +115,15 @@ n: iterations
 p can be 1/2 (switched or not switched).
 
 For large no. of iterations, the probability of guessing the incorrect color is (1/2)ˆ128 (for 128 iterations) ~ 2.9387358770557188e-39. So, the probability of guessing the incorrect color is negligible. Hence, the prover can't cheat.
+
+### Finance
+
+1. <u>Payment</u>: In order to send some tokens to my friend, I just need to generate a **ZK-proof** that proves that I have balance more than the transaction amount. This is called a balance proof. The validator will verify the balance proof submitting a tx containing the ZKP to a **Verifier contract** by checking that the balance is greater than the transaction amount.
+2. <u>Loans</u>: In order to apply for loans, ideally I need to submit bank statements to the bank to proof I had consistent bank statements. But, now I can instead generate a **ZK-proof** that I have a consistent bank statement. And then the bank can just verify the bank statement by submitting a tx containing the ZKP to a **Verifier contract**.
+
+> Here, in both use cases, the verifier (bank/validator) takes less time and also the prover (customer) gets to keep its data private.
+
+## Development
 
 ### Hash function
 

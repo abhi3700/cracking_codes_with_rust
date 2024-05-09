@@ -57,7 +57,11 @@ If you are aiming to be a circuit developer, then you need to know the maths beh
 
 ## Getting started
 
-From _coding_ standpoint, I have although tried [writing the circuits program in Noir](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/noir) so far. But I guess, it would be nice to [first write some circuits using Rust with `arkworks-rs`](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/arkworks/README.md) (groth16 scheme) & then switch to the other circuit langs as it doesn't make sense in the beginning to learn a new language just for writing circuits (unless you are a circuit developer).
+Following are the approaches I discovered so far:
+
+1. From `Noir` lang perspective, I have tried by hands with [writing the circuits program in Noir](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/noir) so far. Will take-up this course: [ZKCamp's Aztec Noir Course](https://github.com/ZKCamp/aztec-noir-course) blindly from theory to practical coding.
+2. From `Rust` background, you can start with [first write some circuits using Rust with `arkworks-rs`](https://github.com/abhi3700/My_Learning_Cryptography/blob/main/proj/zkp/langs/arkworks/README.md) (groth16 scheme) & then switch to the other circuit langs as it doesn't make sense in the beginning to learn a new language just for writing circuits (unless you are a circuit developer).
+3. If you come from NodeJS & Solidity, then hook onto `Circom` lang approach (also the traditional/conventional way), then watch these 2 videos in sequence: [Workshop - Learn Zero Knowledge Proofs (zkSNARKs), Circom, Snarkjs & Implement Solidity Dapp - 1](https://www.youtube.com/watch?v=1tw2wB5i9z8), [Workshop - Learn Zero Knowledge Proofs (zkSNARKs), Circom, Snarkjs & Implement Solidity Dapp - 2](https://www.youtube.com/watch?v=wYdzIwqZBQ0)
 
 ## Conclusion
 
